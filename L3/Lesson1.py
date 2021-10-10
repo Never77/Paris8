@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# python -m pip install library_name
+
+from PIL import Image
+# import pandas
+
 """
 Lecon N°1
 
@@ -72,7 +77,26 @@ if __name__ == "__main__":
     for j in compteur:
         print(j)
     
-    liste_de_lettre = "abcdef"
+    liste_de_lettre = ["a","b", "c" ,"d", "e", "f"]
+    # lettres = "abcdefgh"
     
     for letter in liste_de_lettre:
         print(letter)
+    
+    dico = {
+        "key1": 12,
+        "key2": 0.1,
+        "key3": [
+            1,
+            2
+        ],
+        "key4": {
+            "bool": True
+        },
+        "key5": False
+    }
+
+    dico.get("key1") # => 12
+    dico["key3"][0] # => 1
+
+    Image.open("./binary-Lesson1.png")
